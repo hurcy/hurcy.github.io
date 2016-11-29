@@ -1,7 +1,7 @@
 name: Cinyoung Hur
 highlighter: true
 url: http://hurcy.github.io
-gems: [jekyll-paginate,  jekyll-gist, jekyll-octicons]
+gems: [jekyll-paginate,  jekyll-gist]
 paginate: 8
 description:     Digging into data and more
 intro: 통계분석, 머신러닝을 이용한  데이터 분석 
