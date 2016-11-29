@@ -1,0 +1,30 @@
+
+{% if paginator %}
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="older">{% octicon arrow-left width:40 %}</a>
+  {% else %}
+    <span class="next">{% octicon arrow-left width:40 %}</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a href="/" class="newer">{% octicon arrow-right width:40  %}</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="newer">{% octicon arrow-right width:40 %}</a>
+    {% endif %}
+  {% else %}
+    <span class="previous">{% octicon arrow-right width:40 %}</span></span>
+  {% endif %}
+</div>
+{%  endif %}
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{{site.google_analytics}}']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>

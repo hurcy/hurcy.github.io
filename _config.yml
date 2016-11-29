@@ -1,0 +1,33 @@
+name: Cinyoung Hur
+highlighter: true
+url: http://hurcy.github.io
+gems: [jekyll-paginate,  jekyll-gist, jekyll-octicons]
+paginate: 8
+description:     Digging into data and more
+intro: 통계분석, 머신러닝을 이용한  데이터 분석 
+logo:             logo.png
+disqus_shortname:
+# url: http://gotchacode.com
+#Comment out url when working locally to resolve base urls correctly
+#url:
+
+# Owner/author information
+owner:
+  name:          Cinyoung Hur 
+  avatar:         <avatar-image-link>
+  email:          cinyoung.hur@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:
+  github:	http://github.com/hurcy
+  stackexchange:
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
