@@ -53,11 +53,13 @@ I added legend in the map to show categories of participating countires. In the 
 I revised my visualization for two times. 
 
 Here are sketches:
+
 - First sketch: http://bl.ocks.org/hurcy/raw/cd594fe884fc2a6c0812389dbb4e4a91/
 - Second sketch: http://bl.ocks.org/hurcy/raw/48152dd12cb67101f0ccbc926c2de85b/
 - Thrid sketch: http://bl.ocks.org/hurcy/raw/5f3a97a48c5209beedfd443af9d8e355/
 
 Here are details:
+
 - used popup on the choropleth map
 - separated slopegraphs into three part: overall, rank up, rank down.
 - updated tooltips
