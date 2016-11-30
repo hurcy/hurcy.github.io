@@ -3,8 +3,8 @@ highlighter: rouge
 url: https://hurcy.github.io
 gems: [jekyll-paginate,  jekyll-gist]
 paginate: 8
-description:     Digging into data and more
-intro: 통계분석, 머신러닝을 이용한  데이터 분석 
+description:    Cinyoung Hur | Machine Learning and Data Analysis
+intro: 통계분석, 머신러닝을 이용한 데이터 분석 
 logo:             logo.png
 disqus_shortname:
 # url: http://gotchacode.com
