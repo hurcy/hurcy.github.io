@@ -1,6 +1,6 @@
 name: Cinyoung Hur
 highlighter: rouge 
-url: http://hurcy.github.io
+url: https://hurcy.github.io
 gems: [jekyll-paginate,  jekyll-gist]
 paginate: 8
 description:     Digging into data and more
