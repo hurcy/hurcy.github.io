@@ -6,7 +6,7 @@ paginate: 8
 description:    Cinyoung Hur | Machine Learning and Data Analysis
 intro: 통계분석, 머신러닝을 이용한 데이터 분석 
 logo:             logo.png
-disqus_shortname:
+disqus_shortname: https-hurcy-github-io
 # url: http://gotchacode.com
 #Comment out url when working locally to resolve base urls correctly
 #url:
