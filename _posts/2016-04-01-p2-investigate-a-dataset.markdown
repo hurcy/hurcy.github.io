@@ -6,7 +6,7 @@ categories: udacity en
 ---
 
 I investigated Titanic dataset using NumPy and Pandas. I went through the entire data analysis process, starting by posing a question and finishing by sharing my findings. In this report, the passengers survival rate is analyzed according to passenger class, age, and sex.
-<!--more-->
+
 # Questions
 
 - <a href='#q1'>Does pclass affect to survival rate?</a>
@@ -193,7 +193,7 @@ survived_passengers =  survived_percentage(passengers_by_class, survived_passeng
 survived_passengers.plot(kind='bar', title='Survival Rate by Pclass')
 ```
 
-![png](/images/p2-8-1.png)
+![png](/public/p2-8-1.png)
 
 
 <a id='q2'></a>
@@ -219,7 +219,7 @@ avg_age_by_survived.plot(kind='bar', title='Average Age of Survivors')
     Age and Survival have negative correlation. Younger passengers were more likely to survive.
      
 
-![png](/images/p2-10-2.png)
+![png](/public/p2-10-2.png)
 
 
 
@@ -352,7 +352,7 @@ ranged_age_of_survivors.plot(kind='line', x='Age', y='Survived', title='Survival
 ```
 
 
-![png](/images/p2-12-1.png)
+![png](/public/p2-12-1.png)
 
 
 <a id='q3'></a>
@@ -374,5 +374,5 @@ survivors_by_sex.plot(kind='bar', title='Number of Survivors by sex')
 
 
 
-![png](/images/p2-14-2.png)
+![png](/public/p2-14-2.png)
 

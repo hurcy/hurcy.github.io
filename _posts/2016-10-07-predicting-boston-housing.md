@@ -7,7 +7,6 @@ categories: udacity en
 
 In this project, I evaluated the performance and predictive power of a model that has been trained and tested on data collected from homes in suburbs of Boston, Massachusetts. A model trained on this data that is seen as a *good fit* could then be used to make certain predictions about a home — in particular, its monetary value. This model would prove to be invaluable for someone like a real estate agent who could make use of such information on a daily basis.
 
-<!--more-->
 
 The dataset for this project originates from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Housing). The Boston housing data was collected in 1978 and each of the 506 entries represent aggregated data about 14 features for homes from various suburbs in Boston, Massachusetts. For the purposes of this project, the following preprocessing steps have been made to the dataset:
 - 16 data points have an `'MEDV'` value of 50.0. These data points likely contain **missing or censored values** and have been removed.
@@ -112,15 +111,15 @@ for col in features.columns:
 ```
 
 
-![png](/images/boston_7_1.png)
+![png](/public/boston_7_1.png)
 
 
 
-![png](/images/boston_7_2.png)
+![png](/public/boston_7_2.png)
 
 
 
-![png](/images/boston_7_3.png)
+![png](/public/boston_7_3.png)
 
 
 **Answer: ** 
@@ -234,7 +233,7 @@ vs.ModelLearning(features, prices)
 ```
 
 
-![png](/images/boston_21_0.png)
+![png](/public/boston_21_0.png)
 
 
 ### Question 4 - Learning the Data
@@ -252,7 +251,7 @@ vs.ModelComplexity(X_train, y_train)
 ```
 
 
-![png](/images/boston_25_0.png)
+![png](/public/boston_25_0.png)
 
 
 ### Question 5 - Bias-Variance Tradeoff

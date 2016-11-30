@@ -6,7 +6,7 @@ categories: udacity en
 ---
 
 I used R and 20applied exploratory data analysis techniques to explore relationships in one variable to multiple variables and to explore a white wine dataset for distributions, outliers, and anomalies.
-<!--more-->
+
 ### Overview
 - <a href='#q0'> Prerequisite
 - <a href='#q1'> Univariate Analysis
@@ -75,7 +75,7 @@ White wine dataset has 12 variables that include physicochemical factors and sen
 
 The most interesting feature is quality, because it tells about which wine is bad or excellent. The quality is normal distribution as shown in histogram.
 
-![plot](/images/p4-0.png)
+![plot](/public/p4-0.png)
 
 #### What other features in the dataset do you think will help support your investigation into your feature(s) of interest?
 
@@ -86,7 +86,7 @@ Wine experts use their senses to taste wines: sight, smell, taste. Physicochemic
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##  0.0000  0.2700  0.3200  0.3342  0.3900  1.6600
 
-![plot](/images/p4-1.png)
+![plot](/public/p4-1.png)
 
 Citric acid distribution looks normal distribution. Most of white wines have 0.3 (g/dm^3) of citric acid. There is outlier of 1.7 (g/dm^3) of citric acid.
 
@@ -95,7 +95,7 @@ Citric acid distribution looks normal distribution. Most of white wines have 0.3
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##   3.800   6.300   6.800   6.855   7.300  14.200
 
-![plot](/images/p4-2.png)
+![plot](/public/p4-2.png)
 
 Fixed acidity distribution seems normal distribution. Most of white wines have 6~7 (g/dm^3) of fixed acidity. There is outlier of 14.2 (g/dm^3).
 
@@ -104,7 +104,7 @@ Fixed acidity distribution seems normal distribution. Most of white wines have 6
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##   0.600   1.700   5.200   6.391   9.900  65.800
 
-![plot](/images/p4-3.png)
+![plot](/public/p4-3.png)
 
 Residual sugar distribution looks skewed. The largest spikes in the 1~2 (g/dm^3). There are very few wines Since there is outlier of 65.8 (g/dm^3) and dataset shows very sweet wine is rare, I plot without top 1% of residual sugar.
 
@@ -113,7 +113,7 @@ Residual sugar distribution looks skewed. The largest spikes in the 1~2 (g/dm^3)
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##    8.00    9.50   10.40   10.51   11.40   14.20
 
-![plot](/images/p4-4.png)
+![plot](/public/p4-4.png)
 
 Alcohol seems skewed. Most white wines are 9.5% alcohol.
 
@@ -122,7 +122,7 @@ Alcohol seems skewed. Most white wines are 9.5% alcohol.
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##  0.9871  0.9917  0.9937  0.9940  0.9961  1.0390
 
-![plot](/images/p4-5.png)
+![plot](/public/p4-5.png)
 
 Density seems normal distribution. Most white wines are 0.99 density. But there are couple of outliers.
 
@@ -131,7 +131,7 @@ Density seems normal distribution. Most white wines are 0.99 density. But there 
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##  0.0800  0.2100  0.2600  0.2782  0.3200  1.1000
 
-![plot](/images/p4-6.png)
+![plot](/public/p4-6.png)
 
 Volatile acidity seems normal distribution. Most white wines are 0.2 acidity.
 
@@ -140,7 +140,7 @@ Volatile acidity seems normal distribution. Most white wines are 0.2 acidity.
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ## 0.00900 0.03600 0.04300 0.04577 0.05000 0.34600
 
-![plot](/images/p4-7.png)
+![plot](/public/p4-7.png)
 
 Chlorides seems normal distribution. Most white wines are 0.04 chlorides.
 
@@ -149,7 +149,7 @@ Chlorides seems normal distribution. Most white wines are 0.04 chlorides.
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##    2.00   23.00   34.00   35.31   46.00  289.00
 
-![plot](/images/p4-8.png)
+![plot](/public/p4-8.png)
 
 Free sulfur dioxide seems normal distribution. Most white wines have 34 free sulfur dioxide. 
 
@@ -158,7 +158,7 @@ Free sulfur dioxide seems normal distribution. Most white wines have 34 free sul
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##     9.0   108.0   134.0   138.4   167.0   440.0
 
-![plot](/images/p4-9.png)
+![plot](/public/p4-9.png)
 
 Total sulfur dioxide seems normal distribution. Most white wines have 130 total sulfur dioxide. 
 
@@ -167,7 +167,7 @@ Total sulfur dioxide seems normal distribution. Most white wines have 130 total 
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##   2.720   3.090   3.180   3.188   3.280   3.820
 
-![plot](/images/p4-10.png)
+![plot](/public/p4-10.png)
 
 PH seems normal distribution. Most white wines have 3 pH.
 
@@ -176,7 +176,7 @@ PH seems normal distribution. Most white wines have 3 pH.
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##  0.2200  0.4100  0.4700  0.4898  0.5500  1.0800
 
-![plot](/images/p4-11.png)
+![plot](/public/p4-11.png)
 
 Sulphates seems normal distribution. Most white wines have 0.5 sulphates.
 
@@ -194,7 +194,7 @@ I created a "quality.factor" variable. The quality is based on sensory data of w
     ##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
     ##   0.600   1.700   5.200   6.391   9.900  65.800
 
-![plot](/images/p4-12.png)
+![plot](/public/p4-12.png)
 
 There is outlier of 65.8 (g/dm^3) and dataset shows very sweet wine is rare. So, I adjust breaks of x axis and plot without top 1% of residual sugar.
 
@@ -206,7 +206,7 @@ There is outlier of 65.8 (g/dm^3) and dataset shows very sweet wine is rare. So,
 
 #### Quality by alcohol
 
-![plot](/images/p4-13.png)
+![plot](/public/p4-13.png)
 
     ## 
     ##  Pearson's product-moment correlation
@@ -224,14 +224,14 @@ Level of alcohol is highly correlated to quality. High quality wine tends to hav
 
 #### Quality by Residual sugar & Quality by Ctric acid
 
-![plot](/images/p4-14.png)
+![plot](/public/p4-14.png)
 
 These are quite interesting relationships. Above quality 5, it seems ratio of residual sugar and citric acid is important. 
 High quality of wine tends to crisp and dry. 
 
 #### Did you observe any interesting relationships between the other features (not the main feature(s) of interest)?
 
-![plot](/images/p4-15.png)
+![plot](/public/p4-15.png)
 
     ## 
     ##  Pearson's product-moment correlation
@@ -245,7 +245,7 @@ High quality of wine tends to crisp and dry.
     ##       cor 
     ## 0.8389665
 
-![plot](/images/p4-16.png)
+![plot](/public/p4-16.png)
 
     ## 
     ##  Pearson's product-moment correlation
@@ -259,7 +259,7 @@ High quality of wine tends to crisp and dry.
     ##        cor 
     ## -0.7801376
 
-![plot](/images/p4-17.png)
+![plot](/public/p4-17.png)
 
 Other interesting relationships are residual sugar by density and alcohol by density. As amount of residual sugar is larger, the density gets higher. On the other hand, higher alcohol tends to lower density. 
 
@@ -276,8 +276,8 @@ Correlation coefficient of two variables is quite large (0.838).
 
 #### Talk about some of the relationships you observed in this part of the investigation. Were there features that strengthened each other in terms of looking at your feature(s) of interest?
 
-![plot](/images/p4-18.png)
-![plot](/images/p4-19.png)
+![plot](/public/p4-18.png)
+![plot](/public/p4-19.png)
 
 The pH indicates how acid or alkaline the wine is. Citric acid and fixed acidity strengthed pH variable. Among all variables, fixed acidity has largest correlation (-0.43) with pH.
 
@@ -285,7 +285,7 @@ The density tends to smaller when alcohol level is high and residual sugar is lo
 
 #### Were there any interesting or surprising interactions between features?
 
-![plot](/images/p4-20.png)
+![plot](/public/p4-20.png)
 
 Since large number of wine are 5~6 grades, I facetted by quality to show clearer relationship between residual sugar and citirc acid. As a result, I can see that higher quality wine is less sweet. In addition, color pattern of alcohol is identified: high level of alcohol indicates high quality of wine.
 
@@ -297,7 +297,7 @@ Since large number of wine are 5~6 grades, I facetted by quality to show clearer
 
 #### Plot One
 
-![plot](/images/p4-21.png)
+![plot](/public/p4-21.png)
 
 #### Description One
 
@@ -305,7 +305,7 @@ The most interesting feature is quality, because it tells about which wine is ba
 
 #### Plot Two
 
-![plot](/images/p4-22.png)
+![plot](/public/p4-22.png)
 
 #### Description Two
 
@@ -313,7 +313,7 @@ Level of alcohol is highly correlated to quality. High quality wine tends to hav
 
 #### Plot Three
 
-![plot](/images/p4-23.png)
+![plot](/public/p4-23.png)
 
 #### Description Three
 

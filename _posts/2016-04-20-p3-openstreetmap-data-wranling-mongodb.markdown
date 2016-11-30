@@ -6,7 +6,7 @@ categories: udacity en
 ---
 
 With Seoul map data from [OppenStreetMap](https://www.openstreetmap.org), I used data munging techniques, such as assessing the quality of the data for validity, accuracy, completeness, consistency and uniformity, to clean the OpenStreetMap data for a part of the world that I care about. I used MongoDB and applied new data schema to the project.
-<!--more-->
+
 Map Area: Seoul, Republic of Korea
 
 https://www.openstreetmap.org/relation/2297418

@@ -7,7 +7,6 @@ categories: udacity en
 
 I used descriptive statistics and a statistical test to analyze the Stroop effect, a classic result of experimental psychology. I tried to give a good intuition for the data and use statistical inference to draw a conclusion based on the results. 
 
-<!--more-->
 
 Background Information
 =
@@ -50,8 +49,8 @@ I would perform dependent t-test for paired samples. First of all, we need to co
 
 I provide two visualization of congruent and incongruent conditions. The sample data of each condition is approximately normal distributions. Graph of Incongruent condition shows that it is more spread out than congruent condition.
 
-![Image of plot congruent](/images/p1-0.png)
-![Image of plot incongruent](/images/p1-1.png)
+![Image of plot congruent](/public/p1-0.png)
+![Image of plot incongruent](/public/p1-1.png)
 
 ## Now, perform the statistical test and report your results. What is your confidence level and your critical statistic value? Do you reject the null hypothesis or fail to reject it? Come to a conclusion in terms of the experiment task. Did the results match up with your expectations?
 

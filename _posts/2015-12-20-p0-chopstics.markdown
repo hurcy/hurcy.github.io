@@ -6,7 +6,7 @@ categories: udacity en
 ---
 
 A few researchers set out to determine the optimal length of chopsticks for children and adults. They came up with a measure of how effective a pair of chopsticks performed, called the **"Food Pinching Performance"**. It was determined by counting the number of peanuts picked and placed in a cup (PPPC).
-<!--more-->
+
 
 The abstract below was adapted from [here]('http://www.ncbi.nlm.nih.gov/pubmed/15676839'%)
 
@@ -90,7 +90,7 @@ plt.ylabel("Efficiency in PPPC")
 plt.title("Average Food Pinching Efficiency by Chopstick Length")
 plt.show()
 ```
-![Image of plot](/images/p0-0.png)
+![Image of plot](/public/p0-0.png)
 
 Analysis
 =

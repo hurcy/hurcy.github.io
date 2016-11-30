@@ -5,7 +5,7 @@ date:   2016-07-12 13:00:00 +0900
 categories: udacity en
 ---
 I investigated subway ridership of New York city. Do more people ride the NYC subway when it is raining or when it is not raining? There seems little tendency for people to ride subway when it is raining. I used Mann-Whiteny U test and linear regression to support my analysis.
-<!--more-->
+
 ##   Section 1. Statistical Test
 ### 1.1. Which statistical test did you use to analyze the NYC subway data? Did you use a one-tail or a two-tail P value? What is the null hypothesis? What is my p-critical value?
 
@@ -351,7 +351,7 @@ norain_ridership.plot.hist(bins=100, color='g', title="Ridership in non-rainy da
 
 
 
-![png](/images/p2n_25_1.png)
+![png](/public/p2n_25_1.png)
 
 
 
@@ -367,7 +367,7 @@ rain_ridership.plot.hist(bins=100, color='b', title="Ridership in rainy days") #
 
 
 
-![png](/images/p2n_26_1.png)
+![png](/public/p2n_26_1.png)
 
 
 ### 3.2 One visualization can be more freeform. You should feel free to implement something that we discussed in class (e.g., scatter plots, line plots) or attempt to implement something more advanced if you'd like. Some suggestions are:
@@ -395,7 +395,7 @@ plot.set_ylabel('ridership')
 
 
 
-![png](/images/p2n_28_1.png)
+![png](/public/p2n_28_1.png)
 
 
 - Ridership by day-of-week
@@ -422,7 +422,7 @@ plot.set_ylabel('ridership')
 
 
 
-![png](/images/p2n_30_1.png)
+![png](/public/p2n_30_1.png)
 
 
 - NYC subway ridership on the map
@@ -487,7 +487,7 @@ plt.show()
 
 
 
-![png](/images/p2n_33_1.png)
+![png](/public/p2n_33_1.png)
 
 
 ## Section 4. Conclusion
