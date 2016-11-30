@@ -7,6 +7,7 @@ categories: udacity en
 I investigated subway ridership of New York city. Do more people ride the NYC subway when it is raining or when it is not raining? There seems little tendency for people to ride subway when it is raining. I used Mann-Whiteny U test and linear regression to support my analysis.
 
 ##   Section 1. Statistical Test
+
 ### 1.1. Which statistical test did you use to analyze the NYC subway data? Did you use a one-tail or a two-tail P value? What is the null hypothesis? What is my p-critical value?
 
 - I used a **Mann-Whiteny U test** which is commonly used for compare two sets of data.
@@ -22,7 +23,6 @@ I investigated subway ridership of New York city. Do more people ride the NYC su
 
 Ridership of rainy and non-rainy days is not normal distribution, and non rainy days ridership is larger than the other. So, I used Mann–Whitney U test.
 > In statistics, the <a href="https://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U_test">Mann–Whitney U test</a> is a non-parametric test of the null hypothesis that two samples come from the same population against an alternative hypothesis, especially that a particular population tends to have larger values than the other. Unlike the t-test it does not require the assumption of normal distributions. It is nearly as efficient as the t-test on normal distributions.
-
 
 
 ```python

@@ -7,18 +7,18 @@ categories: udacity en
 
 I investigated Titanic dataset using NumPy and Pandas. I went through the entire data analysis process, starting by posing a question and finishing by sharing my findings. In this report, the passengers survival rate is analyzed according to passenger class, age, and sex.
 
-# Questions
+## Questions
 
 - <a href='#q1'>Does pclass affect to survival rate?</a>
 - <a href='#q2'>What age were more likely to survive?</a>
 - <a href='#q3'>Does sex affect to survival rate?</a>
 
-# Variables
+## Variables
 
 - independent variables : Pclass, Age, Sex
 - dependent variable : Survived
 
-# Reading Titanic data
+## Reading Titanic data
 
 
 ```python
@@ -33,7 +33,7 @@ titanic_data_df = pd.read_csv('titanic_data.csv')
     Populating the interactive namespace from numpy and matplotlib
 
 
-# Statistics of Titanic data
+## Statistics of Titanic data
 
 
 ```python
@@ -356,7 +356,7 @@ ranged_age_of_survivors.plot(kind='line', x='Age', y='Survived', title='Survival
 
 
 <a id='q3'></a>
-# Does sex affect to survival rate?
+## Does sex affect to survival rate?
 
 
 ```python

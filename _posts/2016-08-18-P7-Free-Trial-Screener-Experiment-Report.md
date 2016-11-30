@@ -18,9 +18,9 @@ This figure shows simple action diagram, blue boxes are original user actions an
 The hypothesis was that this might set clearer expectations for students upfront, thus reducing the number of frustrated students who left the free trial because they didn't have enough time—without significantly reducing the number of students to continue past the free trial and eventually complete the course. If this hypothesis held true, Udacity could improve the overall student experience and improve coaches' capacity to support students who are likely to complete the course.
 
 
-# Experiment Design
+## Experiment Design
 
-## Metric Choice
+### Metric Choice
 
 **Invariant Metrics:** Number of cookies, Number of clicks, Click-through-probability
 
@@ -48,7 +48,7 @@ Gross conversion will show us whether we lower our costs by introducing the scre
 
 Therefore, to launch the experiment, Gross conversion should have practically significant decrease, and Net conversion should have statistically significant increase. 
 
-## Measuring Standard Deviation
+### Measuring Standard Deviation
 
 For each of your evaluation metrics, indicate whether you think the analytic estimate would be comparable to the the empirical variability, or whether you expect them to be different (in which case it might be worth doing an empirical estimate if there is time). Briefly give your reasoning in each case.
 
@@ -64,7 +64,7 @@ When Unit of Analysis and Unit of Diversion are same, variability tends to be lo
 
 Gross and Net Conversion have "unique cookies to click the Start free trial button" as Unit of Analysis which is same with Unit of Diversion, so the analytic estimate of the variance can be used.
 
-## Sizing
+### Sizing
 
 ### Number of Samples vs. Power
 
@@ -76,14 +76,14 @@ Our plan is to compare two groups - experimental and control group, and to have 
 
 Thus, I concluded 685,325 pageviews is needed to power my experiment appropriately.
 
-### Duration vs. Exposure
+#### Duration vs. Exposure
 *Give your reasoning for the fraction you chose to divert. How risky do you think this experiment would be for Udacity?*
 
 If I selected 100% traffic to be diverted to this experiment to get enough pageviews as soon as possible. 50% of traffic will go to control group and experiment group. So, 18 days are enough for our experiment, which is a reasonable duration for our experiment. 
 
 I think Free Trial Screener test has low risk since it shows visible change affecting user behavior. This experiment might discourage new enrollment, and yet we can save the cost of enrollments that are unlikely to become paying users. Even if we end up not rolling out the experiment, effects on users would be not big. Also, if there is a chance of a negative impact on payment, extending the duration of the experiment would just mean losing the same customers in a longer amount of time. Regarding to data sensitivity, we do handle number of user visits or enrollment, but we don’t deal with sensitive or private data. 
 
-## Sanity Checks
+### Sanity Checks
 
 Table 2: Sanity checks 
 
@@ -95,9 +95,9 @@ Table 2: Sanity checks
 
 Each of invariant metrics had observed value in a range of their confidence interval, so all metric passed sanity check.
 
-## Result Analysis
+### Result Analysis
 
-### Effect Size Tests
+#### Effect Size Tests
 
 *For each of your evaluation metrics, give a 95% confidence interval around the difference between the experiment and control groups. Indicate whether each metric is statistically and practically significant.*
 
@@ -112,7 +112,7 @@ Since the confidence interval of Gross conversion does not include zero, it is s
 
 Net conversion is neither statistically significant nor practically significant. Its confidence interval include zero, so it's unlikely that there is real difference. It also include practical significance boundary(dmin=0.0075), because practical significance difference does not include the sign of the effect, in this case, we consider negative changes. Thus, I can not be confident at the 95% level that the size of this effect is something that I care about.
 
-### Sign Tests
+#### Sign Tests
 
 *For each of your evaluation metrics, do a sign test using the day-by-day data, and report the p-value of the sign test and whether the result is statistically significant.*
 
@@ -127,7 +127,7 @@ Gross conversion is statistically significant, since this is less than the chose
 
 However, Net conversion is not statistically significant, because it is larger than alpha of 0.05. The sign test does not agree the hypothesis test, that means this result is likely to happen by chance.
 
-### Summary
+#### Summary
 
 
 *State whether you used the Bonferroni correction, and explain why or why not. **If there are any discrepancies between the effect size hypothesis tests and the sign tests, describe the discrepancy and why you think it arose.*
@@ -138,7 +138,7 @@ In order to launch, we would need them both to match our expectations: we look f
 
 There is no discrepancies between the effect size hypothesis tests and the sign tests. 
 
-## Recommendation
+### Recommendation
 
 *Make a recommendation and briefly describe your reasoning.*
 
@@ -149,7 +149,7 @@ Gross conversion is negative and practically significant in our experiment, this
 Based on this results, I would recommend not launching the "5 or more hour" recommendations to “start free trial” button. Instead, I would consider other ways to screen early leavers.
 
 
-# Follow-Up Experiment
+## Follow-Up Experiment
 
 *Give a high-level description of the follow up experiment you would run, what your hypothesis would be, what metrics you would want to measure, what your unit of diversion would be, and your reasoning for these choices.*
 

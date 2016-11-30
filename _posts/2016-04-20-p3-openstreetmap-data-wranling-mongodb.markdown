@@ -13,7 +13,7 @@ https://www.openstreetmap.org/relation/2297418
 
 https://mapzen.com/data/metro-extracts/#seoul-south-korea
 
-### Overview
+## Overview
 - <a href='#q1'> Problems Encountered in the Map
 	- <a href='#q2'> Postal Codes
 	- <a href='#q3'> Hospitals
@@ -25,7 +25,7 @@ https://mapzen.com/data/metro-extracts/#seoul-south-korea
 
 <a id='q1'></a>
 
-#### Problems Encountered in the Map
+### Problems Encountered in the Map
 
 After initially downloading a sample data of the Seoul area and running it against a provisional p3.py file, I noticed three main problems with the data, which I will discuss in the following order:
 
@@ -35,7 +35,7 @@ After initially downloading a sample data of the Seoul area and running it again
 
 <a id='q2'></a>
 
-#### Postal Codes
+### Postal Codes
 
 Postal codes in South Korea were 6-digit numeric, and 5-digit numeric system is introduced in August 1, 2015. Postal code strings have several problems, forcing a decision to strip middle character in 6-digit numeric. (“XXX-XXX” -> “XXXXXX”).
 After standarizing inconsistent postal codes, some “incorrect” postal codes surfaced when grouped together with this aggregator:
@@ -63,7 +63,7 @@ These result showed that this dataset include surrounding cities such as “Buch
 
 <a id='q3'></a>
 
-### Hospitals
+## Hospitals
 
 Most nodes have “name”, “name:en”, and “name:ko_rm” tags. “name:en” is written in English, and “name:ko_rm” is written as it is pronounced in Korean. I focused hospital nodes to check their name fields:
 
@@ -128,7 +128,7 @@ The result, edited for readability:
 
 <a id='q4'></a>
 
-### Data Overview
+## Data Overview
 
 This section contains basic statistics about the dataset and the MongoDB queries used to gather them.
 
@@ -169,11 +169,11 @@ This section contains basic statistics about the dataset and the MongoDB queries
 
 <a id='q5'></a>
 
-### Additional Ideas
+## Additional Ideas
 
 <a id='q6'></a>
 
-#### Translation guideline suggestion
+### Translation guideline suggestion
 
 The translated name field(“name:en”) contains many errors. I cleaned 13%(655/4983) of “name:en” of hospitals. Because map data is gathered throughout the world, the translation-related problem might be common in other languages including Korean. So, I think cleaning up the similar cases is necessary. 
 
@@ -181,9 +181,9 @@ Because of name fields are vary in different languages (“name:ko”, “name:f
 
 <a id='q7'></a>
 
-#### Additional data exploration using MongoDB queries
+### Additional data exploration using MongoDB queries
 
-##### Registration period of hospitals
+#### Registration period of hospitals
 
 		> db.seoul.aggregate( [{ "$match" : {"tags.amenity" : "hospital"} },{"$group":{"_id": "$tags.amenity", "registration_from": { $min: "$timestamp" }, "registration_to": { $max: "$timestamp" }}}])
 		{ 
@@ -197,7 +197,7 @@ Because of name fields are vary in different languages (“name:ko”, “name:f
 			"ok" : 1 
 		} 
 
-##### How many  pediatric and dermatologic hospitals in seoul
+#### How many  pediatric and dermatologic hospitals in seoul
 
 		> db.seoul.aggregate( [{ "$match" : { "$or": [{"tags.name:en":{"$regex":"Pediatric"}},{"tags.name:en":{"$regex":"Dermatologic"}}] }}, {"$group":{"_id": "Pediatric and Dermatologic", "count":{"$sum":1}}}]) 
 		{ 
@@ -212,7 +212,7 @@ Because of name fields are vary in different languages (“name:ko”, “name:f
 
 <a id='q8'></a>
 
-### Conclusion
+## Conclusion
 
 After this review of the map data it’s apparent that the Seoul area is incomplete, though I believe it has been well cleaned for the purposes of this exercise. It surprises me to notice documents are various structures according to area. Other metropolis have different document structure. And, a huge amount of Seoul data is copied from different sources. In the process of copying, some human mistakes seem to be inevitable. By auditing data, frequent mistakes are identified. So, I think it would be possible to prevent the mistakes through showing guidelines to users in advance, or using  data processor similar to p3.py. It helps to maintain more consistent data in OpenStreetMap.org.
 
