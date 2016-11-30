@@ -7,9 +7,8 @@ published: true
 ---
 이 포스팅은 커스텀 플러그인을 사용한 Jekyll 정적 사이트를 자동 배포하는 방법에 대해 설명한다.
 
-나는 [tufte-jekyll theme](https://github.com/clayh53/tufte-jekyll) 이 너무 너무 쓰고 싶었다. 어여쁜 사이드 노트를 보고 나니 바꿀 수 밖에 없었다. Github이 지원하지 않는 커스텀 플러그인을 사용하려면 로컬에서 빌드한 후에 _site만 추려서 올려야 하는데, 이 과정이 번거롭기에 자동 배포를 사용하였다.
+나는 [tufte-jekyll theme](https://github.com/clayh53/tufte-jekyll) 이 너무 너무 쓰고 싶었다. Github이 지원하지 않는 커스텀 플러그인을 사용하려면 로컬에서 빌드한 후에 _site만 추려서 올려야 하는데, 이 과정이 번거롭기에 자동 배포를 사용하였다.
 
-<!--more-->
 
 삽질 끝에 아귀를 맞추고 나니 넘 편하다. 나는 내용에만 집중해 쓰면 되고, 커밋하면 배포는 알아서 잘 돌아간다. Travis CI 짱. 도커 짱. 도커를 이렇게 일회성 배포용 환경으로 사용할 수 있는 것은 그만큼 환경 구성이 쉽기 때문이다. 
 
@@ -53,10 +52,13 @@ Travis CI에서 연결한 저장소마다 환경변수를 추가할 수 있는�
 저장소에 .travis.yml 파일을 만들고, 빨간색으로 표시한 부분을 수정했다. [이 문서](http://stackoverflow.com/a/33125422/6760759)를 참고하여 내 환경에 맞게 수정했다. 
 
 ### .travis.yml
+
 install: 과 script: 영역은 주석 처리한 before_script:와 script:를 사용하여 별도의 스크립트로 빼도 무방하다.
 source 브랜치를 기본으로 했기에, 이 브랜치에 새로운 포스팅이 추가될 때마다 자동 배포가 될 것이다.
 빌드된 파일은 _site에 있을 것이고, 이 폴더만 가지고 master 브랜치를 새로 만든다. 그리고 GITHUB_API_KEY로 저장소에 한번에 커밋한다.
-```ruby 
+
+```ruby
+
 language: ruby
 rvm:
 - 2.3.1
@@ -107,6 +109,7 @@ after_success: |
 난 루비를 잘 모르지만, /var/lib/gems/2.3.0/gems 아래서 로컬에서 사용한 gem들의 버전을 확인할 수 있었다. 
 
 Gemfile
+
 ```ruby
 source 'https://rubygems.org'
 
