@@ -1,5 +1,5 @@
 name: Cinyoung Hur
-highlighter: true
+highlighter: rouge 
 url: http://hurcy.github.io
 gems: [jekyll-paginate,  jekyll-gist]
 paginate: 8
@@ -24,7 +24,7 @@ owner:
   google_plus:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:
+google_analytics: UA-67282612-2
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
