@@ -5,7 +5,7 @@ categories: ko
 source-id: 1J48GCK4zPwOsC7sKaQ314e5-whtAINcLR_56e4bJqzM
 published: true
 ---
-# 대규모 임상적 연관성(associations)의 시간적 관계(temporal relationship) 모델링
+### 참고문헌
 
 Hanauer, D. A., & Ramakrishnan, N. (2013). Modeling temporal relationships in large scale clinical associations. Journal of the American Medical Informatics Association, 20(2), 332–341. https://doi.org/10.1136/amiajnl-2012-001117
 
