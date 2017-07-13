@@ -10,7 +10,9 @@ published: true
 Run this and Nautilus will always start without drawing the icons on the background.
 
 `gsettings set org.gnome.desktop.background show-desktop-icons false`
+
  OR
+
 `apt install dconf-editor`
 
 ## VirtualBox 게스트 전체화면 ([원문](https://www.virtualbox.org/ticket/14323#comment:6))
