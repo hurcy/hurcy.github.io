@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "간단리뷰: MIMIC-Extract
+title:  "간단리뷰: MIMIC-Extract"
 date:   2019-08-08 23:49:29 +0900
 categories: ko
 ---
