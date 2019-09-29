@@ -2,7 +2,7 @@
 layout: post
 title:  "간단리뷰: MIMIC-Extract
 date:   2019-08-08 23:49:29 +0900
-categories: udacity en
+categories: ko
 ---
 
 MIMIC-III 데이터의 전처리 파이프라인을 잘 정리한 논문이다.
