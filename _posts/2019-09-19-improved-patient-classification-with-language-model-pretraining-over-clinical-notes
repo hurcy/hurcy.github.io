@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "간단리뷰: Improved patient classification with language model pretraining over clinical notes"
+date:   2019-09-19 23:49:29 +0900
+categories: ko
+---
+
+MIMIC-III clinical notes를 가지고 진단명을 분류한 연구이다. 
+투약 + 의료행위 + 노트를 시간별로 묶어서 시계열로 처리했다.(논문 내 그림 1)
+pretrained 모델을 사용했고, clinicate note의 단어마다 어텐션을 뽑아서 표시했다.(논문 내 그림 3)
+
+점점 EHR의 시계열 처리할 때 시간의 해상도가 높아지고 있는 것 같다.
+
+https://arxiv.org/pdf/1909.03039.pdf
