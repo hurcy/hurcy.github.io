@@ -1,6 +1,7 @@
 ---
-title: 간단리뷰: High-Throughput Machine Learning from Electronic Health Records
+title: 간단리뷰 High-Throughput Machine Learning from Electronic Health Records
 layout: post
+date:   2019-07-04 23:49:29 +0900
 categories: ko
 published: true
 ---
