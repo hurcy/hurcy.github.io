@@ -1,0 +1,14 @@
+---
+layout: post
+title:  "간단리뷰: BEHRT: TRANSFORMER FOR ELECTRONIC HEALTH RECORDS"
+date:   2019-08-26 23:49:29 +0900
+categories: ko
+---
+
+영국의 Clinical Practice Research Datalink에서 160만명 환자 데이터를 사용했다.
+301 가지 질병의 발병을 예측했다.
+BERT 모델을 EHR에 적용하면서 precision이 8~10% 향상되었다고 보고한다.
+EHR이라서 clinical note 대신에 의료코드를 자연어의 단어처럼 다룬게 특징이다.
+
+
+https://arxiv.org/pdf/1907.08322.pdf
