@@ -10,12 +10,11 @@ Interests:
 + Machine Learning and Statistics
 + [Computational Health Informatics](https://en.wikipedia.org/wiki/Health_informatics#Computational_Health_Informatics)
 + [Information Extraction](https://en.wikipedia.org/wiki/Information_extraction)
-+ [Topic Modeling](https://en.wikipedia.org/wiki/Topic_model)
 
  
 Currently:
 
-+ Data Analyst/Engineer at [Linewalks, Inc.](LINEWALKS)
++ Chief Product Officer/Lead Data Engineer at [Linewalks, Inc.](LINEWALKS)
 
 Previously:
 
